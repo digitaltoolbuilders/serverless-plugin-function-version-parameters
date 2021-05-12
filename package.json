@@ -1,0 +1,9 @@
+{
+  "name": "serverless-plugin-function-version-parameters",
+  "version": "1.0.0",
+  "description": "Will create a SSM parameter for each function's version arn",
+  "main": "index.js",
+  "repository": "https://github.com/jaggedrockdev/serverless-plugin-function-version-parameters.git",
+  "author": "jaggedrockdev",
+  "license": "MIT"
+}
