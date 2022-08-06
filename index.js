@@ -39,11 +39,13 @@ class FunctionVersionParameter {
   
   createFunctionVersionArnParameter(name, fn) {
     
+    console.log('sls', this.serverless.service.service);
+
     return {
       "Type": "AWS::SSM::Parameter",
       "Properties": {
         Name: {
-          "Fn::Sub": "/${AWS::StackName}/"+name+"/LambdaVersionArn"
+          "Fn::Sub": `/${this.serverless.service.service}-\${Stage}/`+name+"/LambdaVersionArn"
         },
         Type: "String",
         Value: {

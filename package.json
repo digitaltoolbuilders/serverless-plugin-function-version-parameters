@@ -1,6 +1,6 @@
 {
   "name": "@digitaltoolbuilders/serverless-plugin-function-version-parameters",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Will create a SSM parameter for each function's version arn",
   "main": "index.js",
   "repository": "https://github.com/digitaltoolbuilders/serverless-plugin-function-version-parameters.git",
